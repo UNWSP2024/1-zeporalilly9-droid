@@ -1,0 +1,5 @@
+# program to take the user's input
+
+name = input("Zepora: ") 
+print("My name is", name)
+
