@@ -1,0 +1,9 @@
+# program #1: Personal Infromation
+# Author: Zepora Lilly
+# Date September 12, 2025
+
+print("Name: Zepora Lilly")
+print("Phone: (612) 327-2296")
+print("College Major: To Be Determined")
+print("Address: 7427 Pine Deep Road, Walnut Grove, MN 66329")
+
