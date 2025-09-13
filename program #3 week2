@@ -1,0 +1,18 @@
+# Program #3: Total Purchases
+# Author: Zepora Lilly
+# Date September 12, 2025
+
+item1 = float(input("Enter price of item 1: $"))
+item2 = float(input("Enter price of item 1: $"))
+item3 = float(input("Enter price of item 1: $"))
+item4 = float(input("Enter price of item 1: $"))
+item5 = float(input("Enter price of item 1: $"))
+
+subtotal = item1 + item2 + item3 + item4 + item5
+sales_tax = subtotal * 0.07
+total = subtotal + sales_tax
+
+print("Subtotal: $", round(subtotal, 2))
+print("Sales Tax (7%): $", round(sales_tax, 2))
+print("Total: $", round(total, 2))
+
