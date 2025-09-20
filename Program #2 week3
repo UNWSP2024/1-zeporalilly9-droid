@@ -1,0 +1,11 @@
+age = int(input("Enter age: "))
+
+match age:
+        case age if age <= 1:
+            print("Infant")
+        case age if age < 13:
+            print("Child")
+        case age if age < 20:
+            print("Teenager")
+        case _:
+            print("Adult")

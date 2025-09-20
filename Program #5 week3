@@ -1,0 +1,45 @@
+# Base prices
+hot_dog_price = 3.50
+chili_dog_price = 4.50
+
+# Topping prices
+cheese_price = 0.50
+peppers_price = 0.75
+onions_price = 1.00
+
+# Tax rate
+tax_rate = 0.07
+
+# Get hot dog type
+dog_type = input("Enter hot dog type (hot dog / chili dog): ").lower()
+
+if dog_type == "hot dog":
+    base_price = hot_dog_price
+elif dog_type == "chili dog":
+    base_price = chili_dog_price
+else:
+    print("Invalid hot dog type.")
+    exit()
+
+# Get toppings
+cheese = input("Add cheese? (yes/no): ").lower() == "yes"
+peppers = input("Add peppers? (yes/no): ").lower() == "yes"
+onions = input("Add grilled onions? (yes/no): ").lower() == "yes"
+
+# Calculate total
+topping_total = 0
+if cheese:
+    topping_total += cheese_price
+if peppers:
+    topping_total += peppers_price
+if onions:
+    topping_total += onions_price
+
+subtotal = base_price + topping_total
+tax = subtotal * tax_rate
+total = subtotal + tax
+
+# Display results
+print(f"Hot dog cost: ${subtotal:.2f}")
+print(f"Tax: ${tax:.2f}")
+print(f"Total cost: ${total:.2f}")
